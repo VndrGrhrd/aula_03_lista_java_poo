@@ -25,6 +25,11 @@ public class main {
 
 //      Filtrar uma Lista
         List<String> result = list.stream().filter(x -> x.charAt(0) == 'A').collect(Collectors.toList());
+        System.out.println(result);
+
+//      Filtrar o primeiro item que começa com a letra 'A'
+        String name = list.stream().filter(x -> x.charAt(0) == 'A').findFirst().orElse(null);
+        System.out.println(name);
 
 
         //imprimir toda a lista
